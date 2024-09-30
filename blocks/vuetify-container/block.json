@@ -1,0 +1,24 @@
+{
+  "apiVersion": 2,
+  "name": "gii-blocks/vuetify-container",
+  "title": "GII Basic Container",
+  "category": "layout",
+  "description": "Most basic container for GII content to provide left/right whitespace.",
+  "mdiIcon": "align-vertical-distribute",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "gii-blocks",
+  "editorScript": "gii-blocks-script",
+  "editorStyle": "gii-blocks-editor-style",
+  "style": "gii-blocks-style",
+  "version": "1.0.0",
+  "example": {},
+  "attributes": {
+    "fluid": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+
+}

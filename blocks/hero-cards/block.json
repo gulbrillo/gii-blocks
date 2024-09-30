@@ -1,0 +1,27 @@
+{
+  "apiVersion": 2,
+  "name": "gii-blocks/hero-cards",
+  "title": "GII Hero Cards",
+  "category": "layout",
+  "description": "A container for hero cards. Best for 3-5 cards.",
+  "mdiIcon": "land-rows-vertical",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "gii-blocks",
+  "editorScript": "gii-blocks-script",
+  "editorStyle": "gii-blocks-editor-style",
+  "style": "gii-blocks-style",
+  "version": "1.0.0",
+  "example": {},
+  "attributes": {
+    "cardHeight": {
+      "type": "string",
+      "default": "300px"
+    }
+  },
+  "providesContext": {
+    "gii-blocks/cardHeight": "cardHeight"
+  },
+  "allowedBlocks": ["gii-blocks/hero-card"]
+}

@@ -1,0 +1,58 @@
+{
+  "apiVersion": 2,
+  "name": "gii-blocks/hero-card",
+  "title": "GII Hero Card",
+  "category": "layout",
+  "icon": "id",
+  "description": "An individual hero card.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "gii-blocks",
+  "editorScript": "gii-blocks-script",
+  "editorStyle": "gii-blocks-editor-style",
+  "style": "gii-blocks-style",
+  "version": "1.0.0",
+  "example": {},
+  "parent": ["gii-blocks/hero-cards"],
+  "usesContext": ["gii-blocks/cardHeight"],
+  "attributes": {
+    "cardHeight": {
+      "type": "string",
+      "default": "300px"
+    },
+    "title": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-card-title"
+    },
+    "subtitle": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-card-subtitle"
+    },
+    "linkName": {
+      "type": "string",
+      "source": "html",
+      "selector": ".hero-card-link-name"
+    },
+    "linkTarget": {
+      "type": "string",
+      "source": "attribute",
+      "selector": ".hero-card-link",
+      "attribute": "href"
+    },
+    "linkTargetNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundVideo": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}
