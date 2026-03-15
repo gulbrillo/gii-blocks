@@ -1,0 +1,70 @@
+{
+  "apiVersion": 2,
+  "name": "gii-blocks/light-field",
+  "title": "GII Light Field",
+  "category": "media",
+  "icon": "format-gallery",
+  "description": "An interactive light field splat image sequence with mouse-driven parallax.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "gii-blocks",
+  "editorScript": "gii-blocks-script",
+  "editorStyle": "gii-blocks-editor-style",
+  "style": "gii-blocks-style",
+  "version": "1.0.0",
+  "example": {},
+  "attributes": {
+    "mediaId": {
+      "type": "integer"
+    },
+    "src": {
+      "type": "string",
+      "default": ""
+    },
+    "lowSrc": {
+      "type": "string",
+      "default": ""
+    },
+    "cols": {
+      "type": "number",
+      "default": 4
+    },
+    "rows": {
+      "type": "number",
+      "default": 3
+    },
+    "aspectRatio": {
+      "type": "number",
+      "default": 1.7778
+    },
+    "crop": {
+      "type": "boolean",
+      "default": false
+    },
+    "flipRows": {
+      "type": "boolean",
+      "default": false
+    },
+    "rounded": {
+      "type": "string",
+      "default": ""
+    },
+    "fullscreen": {
+      "type": "boolean",
+      "default": false
+    },
+    "reverse": {
+      "type": "boolean",
+      "default": false
+    },
+    "idle": {
+      "type": "boolean",
+      "default": false
+    },
+    "wiggle": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

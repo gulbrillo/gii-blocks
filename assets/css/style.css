@@ -8,7 +8,7 @@
 .hero-card {
     flex: 1;
     transition: flex 0.5s ease;
-    font-family: "Roboto Condensed", sans-serif !important;
+    font-family: 'Space Grotesk', sans-serif !important;
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -98,20 +98,19 @@
 }
 
 .v-application  .hero-card .hero-card-link {
-    font-family: "Roboto Condensed", sans-serif !important;
-    font-size: 1.5em !important;
-    font-weight: 900 !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    font-size: 1.25em !important;
+    font-weight: 700 !important;
     font-style: italic !important;
     letter-spacing: 0 !important;
-    height: 32px !important;
+    height: 28px !important;
 }
 
 .v-application .hero-card .hero-card-title {
-    font-size: 3em !important;
-    font-weight: 900 !important;
-    font-style: italic !important;
+    font-size: 2.5em !important;
+    font-weight: 700 !important;
     line-height: normal;
-    font-family: "Roboto Condensed", sans-serif !important;
+    font-family: 'Space Grotesk', sans-serif !important;
     text-transform: uppercase;
     word-break: normal !important;
 }

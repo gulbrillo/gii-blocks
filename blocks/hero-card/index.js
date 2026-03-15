@@ -20,11 +20,23 @@ registerBlockType('gii-blocks/hero-card', {
             className: 'hero-card',
         });
 
+        const isExternal =
+            typeof linkTarget === 'string' &&
+            /^(https?:)?\/\//i.test(linkTarget);
+
         const cardProps = useBlockProps.save({
             className: 'hero-vuetify-card elevation-0',
             tile: 'tile',
             dark: 'dark',
-            to: linkTarget || '#',
+            ...(isExternal
+                ? {
+                    href: linkTarget,
+                    target: linkTargetNewTab ? '_blank' : undefined,
+                    rel: linkTargetNewTab ? 'noopener noreferrer' : undefined,
+                }
+                : {
+                    to: linkTarget || '#',
+                }),
         });
 
         const backgroundProps = useBlockProps.save({

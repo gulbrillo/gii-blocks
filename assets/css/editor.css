@@ -38,3 +38,35 @@
     padding: 20px;
     background-color: lightgray;
 }
+
+/* Light Field Block */
+
+.edit-light-field {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.edit-light-field-preview {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.edit-light-field-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.edit-light-field-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 11px;
+    font-family: monospace;
+    padding: 2px 6px;
+    border-radius: 3px;
+    pointer-events: none;
+}

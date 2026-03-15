@@ -8,7 +8,8 @@ import {
 import {
     PanelBody,
     Placeholder,
-    ToggleControl
+    ToggleControl,
+    SelectControl
 } from '@wordpress/components';
 
 import mdiIcon from "../../scripts/mdiIcon";
@@ -38,6 +39,30 @@ const Edit = ({ attributes, setAttributes }) => {
                         checked={fluid}
                         onChange={(value) => setAttributes({ fluid: value })}
                         help={__('Removes viewport maximum-width size breakpoints.', 'gii-blocks')}
+                    />
+                    <SelectControl
+                        label={__('Width', 'gii-blocks')}
+                        value={attributes.width}
+                        options={[
+                            { label: __('Full', 'gii-blocks'), value: 'full' },
+                            { label: __('Wide', 'gii-blocks'), value: 'wide' },
+                            { label: __('Semi', 'gii-blocks'), value: 'semi' },
+                            { label: __('Narrow', 'gii-blocks'), value: 'narrow' },
+                        ]}
+                        onChange={(value) => setAttributes({ width: value })}
+                        help={__('Sets the internal padding and container width.', 'gii-blocks')}
+                    />
+                    <SelectControl
+                        label={__('Background', 'gii-blocks')}
+                        value={attributes.background}
+                        options={[
+                            { label: __('Transparent', 'gii-blocks'), value: 'transparent' },
+                            { label: __('Dark', 'gii-blocks'), value: 'dark' },
+                            { label: __('Gradient', 'gii-blocks'), value: 'gradient' },
+                            { label: __('Light', 'gii-blocks'), value: 'light' },
+                        ]}
+                        onChange={(value) => setAttributes({ background: value })}
+                        help={__('Sets the background of the container.', 'gii-blocks')}
                     />
                 </PanelBody>
             </InspectorControls>

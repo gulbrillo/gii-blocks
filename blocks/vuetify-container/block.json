@@ -18,6 +18,14 @@
     "fluid": {
       "type": "boolean",
       "default": false
+    },
+    "width": {
+      "type": "string",
+      "default": "full"
+    },
+    "background": {
+      "type": "string",
+      "default": "transparent"
     }
   }
 
