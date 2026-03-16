@@ -18,6 +18,7 @@ registerBlockType('gii-blocks/light-field', {
             reverse,
             idle,
             wiggle,
+            boost,
         } = attributes;
 
         const blockProps = useBlockProps.save({ className: 'light-field' });
@@ -37,6 +38,7 @@ registerBlockType('gii-blocks/light-field', {
                     reverse={reverse ? "" : undefined}
                     idle={idle ? "" : undefined}
                     wiggle={wiggle ? "" : undefined}
+                    boost={boost ? "" : undefined}
                 />
             </div>
         );

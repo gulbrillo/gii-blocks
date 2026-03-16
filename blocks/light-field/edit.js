@@ -29,6 +29,7 @@ const Edit = ({ attributes, setAttributes }) => {
         reverse,
         idle,
         wiggle,
+        boost,
     } = attributes;
 
     const blockProps = useBlockProps({ className: 'edit-light-field' });
@@ -36,7 +37,7 @@ const Edit = ({ attributes, setAttributes }) => {
     const onSelectMedia = (media) => {
         setAttributes({
             mediaId: media.id,
-            src: media.sizes?.full?.url || media.url,
+            src: (media.sizes?.full?.url || media.url).replace(/-scaled(\.[^.]+)$/, '$1'),
             lowSrc: media.sizes?.small?.url || media.sizes?.thumbnail?.url || '',
         });
     };
@@ -115,6 +116,12 @@ const Edit = ({ attributes, setAttributes }) => {
                         help={__('Corner radius — number (px) or string e.g. "lg".', 'gii-blocks')}
                         value={rounded}
                         onChange={(value) => setAttributes({ rounded: value })}
+                    />
+                    <ToggleControl
+                        label={__('Boost Image', 'gii-blocks')}
+                        help={__('Boost saturation, brightness and contrast.', 'gii-blocks')}
+                        checked={boost}
+                        onChange={(value) => setAttributes({ boost: value })}
                     />
                 </PanelBody>
 

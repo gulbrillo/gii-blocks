@@ -65,6 +65,10 @@
     "wiggle": {
       "type": "boolean",
       "default": false
+    },
+    "boost": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
